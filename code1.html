@@ -1,0 +1,47 @@
+<main class="wrapper">
+  <section class="section" id="codeZone2">
+    <div class="tutorial-box">
+      <h2>Live HTML, CSS, and JavaScript Editor</h2>
+      <p>
+        Input your HTML, CSS, and JavaScript code below and see the result
+        instantly.
+      </p>
+
+      <!-- HTML Editor -->
+      <div class="code-editor">
+        <h3>HTML</h3>
+        <textarea
+          id="htmlCode2"
+          placeholder="Write your HTML here..."
+          rows="5"
+        ></textarea>
+      </div>
+
+      <!-- CSS Editor -->
+      <div class="code-editor">
+        <h3>CSS</h3>
+        <textarea
+          id="cssCode2"
+          placeholder="Write your CSS here..."
+          rows="5"
+        ></textarea>
+      </div>
+
+      <!-- JavaScript Editor -->
+      <div class="code-editor">
+        <h3>JavaScript</h3>
+        <textarea
+          id="jsCode2"
+          placeholder="Write your JavaScript here..."
+          rows="5"
+        ></textarea>
+      </div>
+
+      <button class="run-button" onclick="runCode('2')">Run Code</button>
+      <button class="undo-button" onclick="clearCode('2')">Clear Code</button>
+
+      <h3>Output:</h3>
+      <iframe id="outputFrame2" class="preview" title="Code Output"></iframe>
+    </div>
+  </section>
+</main>

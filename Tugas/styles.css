@@ -1,0 +1,185 @@
+/* Reset default browser styling */
+body {
+  margin: 0; /* Menghilangkan margin bawaan browser */
+  font-family: Arial, Helvetica, sans-serif; /* Mengatur font default halaman */
+  background-color: #f4f4f4; /* Warna latar belakang halaman */
+}
+
+/* Header */
+.header {
+  background-color: #edd251; /* Warna background header */
+  height: 230px; /* Tinggi header */
+  width: 272px;
+  display: flex; /* Menggunakan flexbox untuk menyusun elemen di dalamnya */
+  align-items: center; /* Vertikal: Posisi elemen di tengah 
+                          Pilihan lain: 
+                          - flex-start: Elemen di atas
+                          - flex-end: Elemen di bawah */
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2); /* Menambahkan efek bayangan */
+  border-left: 8px solid #da2513;
+}
+
+.logo img {
+  width: 120px; 
+  height: 120px; 
+  padding-left: 72px;
+}
+
+.logo h1 {
+  text-align: center;
+  font-size: 16px;
+  padding-top: 5px;
+  padding-left: 45px;
+  font-weight: normal;
+}
+
+/* Struktur Layout */
+.container {
+  display: flex; /* Membuat layout fleksibel untuk sidebar dan konten 
+                    Pilihan lain:
+                    - grid: Untuk layout berbasis grid */
+}
+
+/* Sidebar */
+.sidebar {
+  width: 280px; /* Lebar sidebar */
+  background-color: #1B3476; /* Warna latar belakang sidebar */
+  color: white; /* Warna teks sidebar */
+  padding-top: 20px; /* Jarak isi sidebar dari atas 
+                        Pilihan lain:
+                        - padding: 0; Tanpa jarak */
+  box-sizing: border-box; /* Memasukkan padding ke dalam lebar elemen */
+  height: calc(
+    100vh - 100px
+  ); /* Tinggi sidebar = tinggi layar - tinggi header */
+  position: sticky; /* Membuat sidebar tetap terlihat saat di-scroll 
+                       Pilihan lain:
+                       - fixed: Sidebar tetap di posisi tertentu */
+  padding-top: 10px;
+                      }
+
+
+.search-box {
+  display: flex;
+  background-color: #edd251;
+  height: 50px;
+  border-left: 8px solid #da2513;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+}
+
+.search-box input {
+  width: 90%; 
+  padding: 5px;
+  height: 25px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-box input :hover {
+  border: 1px solid #ccc;
+}
+
+.nav {
+  list-style: none; /* Menghilangkan bullet pada daftar 
+                       Pilihan lain:
+                       - circle: Bullet berbentuk lingkaran
+                       - square: Bullet berbentuk kotak */
+  padding: 0; /* Menghapus padding default pada daftar */
+  margin: 0; /* Menghapus margin default pada daftar */
+  padding-top: 10px;
+}
+
+.nav li {
+  margin: 0px 0;
+}
+
+.nav li a {
+  text-decoration: none; /* Menghapus garis bawah pada link 
+                            Pilihan lain:
+                            - underline: Menambahkan garis bawah */
+  color: white; /* Warna teks link 
+                   Pilihan lain:
+                   - #000: Teks warna hitam */
+  display: block; /* Membuat elemen link memenuhi lebar container 
+                     Pilihan lain:
+                     - inline-block: Hanya selebar kontennya */
+  text-align: left; /* Menengahkan teks dalam link 
+                         Pilihan lain:
+                         - left: Rata kiri
+                         - right: Rata kanan */
+  padding-left: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  background-color: #1B3476; /* Warna background default link */
+}
+
+.nav li a1 {
+  text-decoration: none; /* Menghapus garis bawah pada link 
+                            Pilihan lain:
+                            - underline: Menambahkan garis bawah */
+  color: white; /* Warna teks link 
+                   Pilihan lain:
+                   - #000: Teks warna hitam */
+  padding: 5px; /* Jarak di dalam elemen link 
+                    Pilihan lain:
+                    - padding: 5px; Jarak lebih kecil */
+  display: block; /* Membuat elemen link memenuhi lebar container 
+                     Pilihan lain:
+                     - inline-block: Hanya selebar kontennya */
+  text-align: left; /* Menengahkan teks dalam link 
+                         Pilihan lain:
+                         - left: Rata kiri
+                         - right: Rata kanan */
+  padding-left: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  background-color: #da2513; /* Warna background default link */
+}
+
+.nav li a:hover {
+  background-color: #edd251;
+  border-left: 8px solid #da2513;
+  color: #222;
+  padding-left: 12px;
+  padding-top: 10px;
+}
+
+/* Konten */
+.content {
+  flex-grow: 1; /* Membuat konten menyesuaikan sisa ruang di sebelah sidebar */
+  padding: 20px; /* Memberikan jarak di dalam elemen konten */
+  background-color: #f4f4f4; /* Warna latar belakang konten */
+  box-sizing: border-box; /* Memasukkan padding ke dalam lebar elemen */
+  height: calc(
+    100vh - 100px
+  ); /* Tinggi konten = tinggi layar - tinggi header */
+  overflow-y: auto; /* Menambahkan scroll vertikal jika konten terlalu panjang 
+                       Pilihan lain:
+                       - hidden: Menghilangkan scroll */
+}
+
+/* Footer */
+.footer {
+  background-color: #2d2929; /* Warna latar belakang footer */
+  color: white; /* Warna teks footer */
+  text-align: center; /* Teks rata tengah 
+                         Pilihan lain:
+                         - left: Rata kiri
+                         - right: Rata kanan */
+  padding: 15px; /* Memberikan jarak di dalam elemen footer */
+  position: relative; /* Membuat footer tetap di bagian bawah halaman 
+                         Pilihan lain:
+                         - fixed: Tetap di bawah layar */
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2); /* Efek bayangan atas pada footer */
+}
+
+.footer p {
+  margin: 0; /* Menghapus margin pada teks di dalam footer */
+  color: #f4f4f4;
+  font-size: 18px; /* Ukuran teks footer 
+                      Pilihan lain:
+                      - 16px: Ukuran teks lebih besar */
+}

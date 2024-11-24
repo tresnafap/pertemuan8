@@ -1,0 +1,135 @@
+/* RESET - Menghilangkan margin dan padding default dari elemen */
+body,
+h1,
+h2,
+p,
+nav,
+a,
+section {
+  margin: 0; /* Menghapus margin default elemen 
+                  Pilihan lain:
+                  - margin: 10px; Memberikan margin kecil */
+  padding: 0; /* Menghapus padding default elemen 
+                   Pilihan lain:
+                   - padding: 5px; Memberikan padding kecil */
+  box-sizing: border-box; /* Menjadikan padding dan border dihitung sebagai ukuran elemen 
+                               Pilihan lain:
+                               - content-box: Hanya konten yang dihitung */
+}
+
+/* Gaya Global */
+body {
+  font-family: "Arial", sans-serif; /* Mengatur font default 
+                                         Pilihan lain:
+                                         - 'Times New Roman', serif: Font bergaya klasik */
+  line-height: 1.6; /* Memberikan jarak antar baris teks 
+                         Pilihan lain:
+                         - 1.2: Jarak lebih kecil
+                         - 2: Jarak lebih besar */
+  color: #e0e0e0; /* Warna teks terang untuk dark mode 
+                       Pilihan lain:
+                       - #ffffff: Putih penuh
+                       - #cccccc: Abu-abu lebih terang */
+  background: #1c1c1c; /* Latar belakang hitam untuk dark mode 
+                            Pilihan lain:
+                            - #000000: Hitam pekat
+                            - #2c2c2c: Hitam dengan tone lebih terang */
+  padding: 20px; /* Memberikan ruang di sekitar konten 
+                      Pilihan lain:
+                      - 10px: Padding lebih kecil
+                      - 40px: Padding lebih besar */
+}
+
+/* Header */
+header {
+  text-align: center; /* Konten di tengah 
+                           Pilihan lain:
+                           - left: Rata kiri
+                           - right: Rata kanan */
+  margin-bottom: 20px; /* Jarak bawah header 
+                            Pilihan lain:
+                            - margin-bottom: 10px; Jarak lebih kecil */
+  background-color: #333; /* Warna gelap untuk header 
+                               Pilihan lain:
+                               - #444: Warna lebih terang
+                               - #222: Warna lebih gelap */
+  color: #e0e0e0; /* Warna biru terang untuk teks header 
+                       Pilihan lain:
+                       - #f1c40f: Emas cerah
+                       - #ffffff: Putih */
+  padding: 20px; /* Spasi dalam header 
+                      Pilihan lain:
+                      - 10px: Padding lebih kecil */
+  border-radius: 8px; /* Membuat sudut membulat 
+                           Pilihan lain:
+                           - 0px: Tidak membulat
+                           - 16px: Membulat lebih besar */
+}
+
+header h1 {
+  font-size: 2.5rem; /* Ukuran font besar 
+                          Pilihan lain:
+                          - 2rem: Sedikit lebih kecil
+                          - 3rem: Lebih besar */
+}
+
+/* Navigasi Utama */
+.main-nav {
+  margin-top: 15px; /* Jarak atas navigasi 
+                         Pilihan lain:
+                         - 10px: Jarak lebih kecil
+                         - 20px: Jarak lebih besar */
+}
+
+.main-nav a {
+  text-decoration: none; /* Menghilangkan garis bawah pada link 
+                              Pilihan lain:
+                              - underline: Menambahkan garis bawah */
+  margin: 0 10px; /* Jarak antar link 
+                       Pilihan lain:
+                       - 0 5px: Jarak lebih kecil */
+  color: #ffffff; /* Warna teks putih 
+                       Pilihan lain:
+                       - #f1c40f: Warna emas
+                       - #e74c3c: Warna merah */
+  padding: 8px 12px; /* Spasi dalam tombol 
+                          Pilihan lain:
+                          - 5px 10px: Padding lebih kecil */
+  background-color: #444; /* Warna tombol gelap 
+                               Pilihan lain:
+                               - #555: Warna lebih terang */
+  border-radius: 4px; /* Membuat tombol membulat 
+                           Pilihan lain:
+                           - 0px: Tidak membulat
+                           - 10px: Membulat lebih besar */
+  transition: background-color 0.3s ease; /* Animasi saat hover 
+                                               Pilihan lain:
+                                               - 0.5s: Durasi lebih lambat
+                                               - ease-in-out: Animasi lebih halus */
+}
+
+.main-nav a:hover {
+  background-color: #555; /* Warna saat tombol di-hover 
+                               Pilihan lain:
+                               - #666: Warna lebih terang
+                               - #333: Warna lebih gelap */
+}
+
+/* Footer */
+footer {
+  margin-top: 20px; /* Jarak atas footer 
+                         Pilihan lain:
+                         - 10px: Jarak lebih kecil */
+  text-align: center; /* Teks di tengah 
+                           Pilihan lain:
+                           - left: Teks rata kiri
+                           - right: Teks rata kanan */
+  font-size: 0.9rem; /* Ukuran teks kecil 
+                          Pilihan lain:
+                          - 1rem: Ukuran sedang
+                          - 0.8rem: Lebih kecil */
+  color: #999; /* Warna abu-abu terang 
+                    Pilihan lain:
+                    - #aaa: Lebih terang
+                    - #666: Lebih gelap */
+}

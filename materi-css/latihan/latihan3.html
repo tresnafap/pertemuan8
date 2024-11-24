@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan 3: Bar Navigasi</title>
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+      /* Gaya khusus untuk bar navigasi */
+      body {
+        background-color: #F6F6F6;
+      }
+
+      header {
+        background-color: #A7D4D4;
+      }
+
+      h1 {
+        color: rgb(4, 108, 108);
+      }
+
+      h2 {
+        color: rgb(4, 108, 108);
+      }
+
+      p {
+        color: rgb(4, 108, 108);
+      }
+
+      .navbar {
+        display: flex; /* Membuat elemen dalam bar navigasi berbaris horizontal */
+        justify-content: space-around; /* Memberi jarak yang merata antar elemen */
+        align-items: center; /* Pusatkan elemen secara vertikal */
+        background-color: rgb(4, 108, 108); /* Warna latar belakang bar navigasi */
+        padding: 10px; /* Spasi dalam bar */
+        border-radius: 8px; /* Membuat sudut membulat */
+      }
+      .navbar a {
+        color: #A7D4D4; /* Warna teks emas */
+        text-decoration: none; /* Menghilangkan garis bawah */
+        font-size: 1.2rem; /* Ukuran font lebih besar */
+        padding: 10px 15px; /* Spasi dalam setiap link */
+        transition: background-color 0.3s ease; /* Animasi saat di-hover */
+      }
+      .navbar a:hover {
+        background-color: #9fcece; /* Warna latar belakang saat di-hover */
+        border-radius: 4px; /* Membuat sudut membulat saat di-hover */
+        color: rgb(4, 108, 108);
+      }
+      
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Latihan 3: Bar Navigasi</h1>
+    </header>
+    <main>
+      <!-- Contoh Bar Navigasi -->
+      <h2>Bar Navigasi</h2>
+      <nav class="navbar">
+        <a href="../index.html">Beranda</a>
+        <a href="latihan1.html">Latihan 1</a>
+        <a href="latihan2.html">Latihan 2</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+      <p>
+        Bar navigasi ini memungkinkan Anda berpindah antara halaman latihan dan
+        beranda.
+      </p>
+    </main>
+    <footer>
+      <p>Kembali ke <a href="../index.html">halaman utama</a></p>
+    </footer>
+  </body>
+</html>
